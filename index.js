@@ -140,7 +140,7 @@ async function Messageing() {
 const scheduleCronstyle = () => {
   //每天的早上十点钟定时执行一次: 
   let count = 1
-  let test = schedule.scheduleJob('0 0 10 * * *', () => {
+  let test = schedule.scheduleJob('* * * * * *', () => {
     console.log('定时器发送次数', count);
     count++;
   })
